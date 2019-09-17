@@ -1,5 +1,15 @@
-body {
+body, .rsbgcard {
     background-color: #0D0D0D;
+    border: none;
+}
+
+html, body, pre, code, kbd, samp {
+    font-family: "'Press Start 2P', cursive";
+}
+
+#start {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
 }
 
 .ctitle {
