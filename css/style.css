@@ -31,7 +31,7 @@ html, body, pre, code, kbd, samp {
     font-size: 0.75rem;
 }
 
-.skilltitle {
+.skilltitle h2 {
     font-family: 'Press Start 2P', cursive;
     color: #dddddd;
     font-size: 1.5rem;
@@ -56,5 +56,13 @@ html, body, pre, code, kbd, samp {
 }
 
 .bg-content {
-    background: #100F12;
+    background: #070707;
+    border: 3px solid #050505;
+    border-radius: 30px;
+}
+
+@media (max-width: 567.98px) {
+    /* .skilltitle {
+        font-size: 1.25rem;
+    } */
 }
