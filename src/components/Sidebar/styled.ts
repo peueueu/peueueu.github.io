@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const SidebarWrapper = styled.aside`
-width: 16rem;
+width: 15rem;
 padding: 2rem;
 position: fixed;
-background: #0d0d0d;
+border-right: 1px solid #025920;
+background: #012619;
 height:100vh;
 display: flex;
 flex-direction: column;

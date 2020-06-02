@@ -1,6 +1,7 @@
 import React from 'react';
-import CrocodileIcon from '../../assets/crocodile';
-import { AvatarWrapper, ImageWrapper } from './styled';
+// import CrocodileIcon from '../../assets/crocodile';
+import profileFoto from '../../assets/peueueu.jpeg';
+import { AvatarWrapper, ImageWrapper, Title, Subtitle, Description, ContentWrapper } from './styled';
 
 const Avatar: React.FC = () => {
 
@@ -8,13 +9,15 @@ const Avatar: React.FC = () => {
     <>
       <AvatarWrapper>
         <ImageWrapper>
-          <CrocodileIcon />
+          <img src={profileFoto} alt="profile-pic" />
         </ImageWrapper>
-        <div>
-          <h1>Peu Silva</h1>
-          <span>Front-end Developer</span>
-          <p>However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
-        </div>
+        <ContentWrapper>
+          <Title>Peu Silva</Title>
+          <Subtitle>Front-end Developer</Subtitle>
+          {/* <p>However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p> */}
+          <Description>Diretamente da borda mais estranha da zona oeste do Recife.</Description>
+          {/* <Description>Knights of Ni, we are but simple travelers who seek the enchanter who lives beyond these woods.</Description> */}
+        </ContentWrapper>
       </AvatarWrapper>
     </>
   )

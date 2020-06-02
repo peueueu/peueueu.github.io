@@ -20,8 +20,9 @@ color: #f2f2f2;
 text-decoration: none;
 
 &:hover svg{ 
-  fill: #04D976;
-  transition: fill .5s ease;
+  fill: #fff;
+  transform: scale(1.15);
+  transition: all .6s ease;
 }
 `
 

@@ -7,6 +7,6 @@ display: flex;
 export const LayoutMain = styled.main`
 background: #f2f2f2;
 min-height: 100vh;
-padding: 0 3.75rem 0 20rem;
+padding: 50px 5rem 0 22rem;
 width:100%;
 `
