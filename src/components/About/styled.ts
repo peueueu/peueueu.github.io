@@ -6,7 +6,7 @@ export const AboutWrapper = styled.section`
 `
 
 export const Title = styled.h1`
-font-size: 2rem;
+font-size: 2.5rem;
 color: #012619;
 font-family: 'Hind', sans-serif;
 position: relative;

@@ -1,5 +1,14 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
+
+const fadeIn = keyframes`
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
+`
 
 export const IntroWrapper = styled.div`
 div {
@@ -30,16 +39,31 @@ font-family: 'Hind', sans-serif;
 `
 
 export const ExtraInfo = styled.span`
-font-size: .75rem;
+font-size: 1rem;
 color: #606060;
 letter-spacing: 2px;
 font-family: 'Hind', sans-serif;
 `
 
 export const Description = styled.p`
-font-size: 1rem;
+font-size: 1.25rem;
 color: #0d0d0d;
+margin-top: 15px;
 line-height: 22px;
+animation: ${fadeIn} 1s;
 font-family: 'Hind', sans-serif;
+`
+
+export const DescriptionToggler = styled.a`
+font-size: 1rem;
+transition: color .5s ease;
+font-weight: bold;
+margin-bottom: 10px;
+font-family: 'Hind', sans-serif;
+text-decoration: none;
+
+span {
+  font-size: .75rem;
+}
 `
 

@@ -39,7 +39,9 @@ const SocialLinks: React.FC = () => {
             </IconWrapper>
           </SocialLinksLink>
         </SocialLinksItem>
-
+        <SocialLinksItem>
+          
+        </SocialLinksItem>
       </SocialLinksList>
     </SocialLinksWrapper>
   )

@@ -1,10 +1,19 @@
-import React from 'react';
-import { IntroWrapper, Title, Role, ExtraInfo, Description } from './styled';
+import React, { useState } from 'react';
+import { IntroWrapper, Title, Role, ExtraInfo, DescriptionToggler, Description } from './styled';
 
-const ExpCard: React.FC<{ company: string, location: string, role: string, period: string }> = (props) => {
+const ExpCard: React.FC<{ company: string, location: string, role?: string, period?: string, course?: string }> = (props) => {
+
+  const [description, showDescription] = useState({ show: false });
+
+  function toggleDescription() {
+    showDescription({
+      show: !description.show
+    })
+  }
+
+
   return (
     <>
-
       <IntroWrapper>
         <div>
           <Title>{props.company}</Title>
@@ -16,9 +25,10 @@ const ExpCard: React.FC<{ company: string, location: string, role: string, perio
           <ExtraInfo>{props.location}</ExtraInfo>
         </div>
       </IntroWrapper>
-
-
-      <Description>{props.children}</Description>
+      <DescriptionToggler href="#" onClick={toggleDescription} style={{ color: description.show ? '#03bd4e' : '#b2b2b2' }}>
+        Principais atividades <span>➕</span>
+      </DescriptionToggler>
+      <Description style={{ display: description.show ? 'block' : 'none' }}>{props.children}</Description>
     </>
   )
 }

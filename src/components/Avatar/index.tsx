@@ -14,8 +14,8 @@ const Avatar: React.FC = () => {
         <ContentWrapper>
           <Title>Peu Silva</Title>
           <Subtitle>Front-end Developer</Subtitle>
-          {/* <p>However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p> */}
-          <Description>Diretamente da borda mais estranha da zona oeste do Recife.</Description>
+          <Description>However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</Description>
+          {/* <Description>Diretamente da borda mais estranha da zona oeste do Recife.</Description> */}
           {/* <Description>Knights of Ni, we are but simple travelers who seek the enchanter who lives beyond these woods.</Description> */}
         </ContentWrapper>
       </AvatarWrapper>

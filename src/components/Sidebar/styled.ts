@@ -11,4 +11,8 @@ display: flex;
 flex-direction: column;
 text-align: center;
 align-items: center;
+
+// @media(max-width: 1368px){
+//   transform: translateX(100vw);
+// }
 `
