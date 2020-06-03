@@ -4,16 +4,19 @@ import styled from 'styled-components';
 export const SocialLinksWrapper = styled.nav`
 margin: 2rem auto;
 width: 100%;
+margin-left: 10px;
 `
 
 export const SocialLinksList = styled.ul`
 align-items:center;
 display: flex;
+width: inherit;
 justify-content: space-around;
-list-styled: none;
 `
 
-export const SocialLinksItem = styled.li``
+export const SocialLinksItem = styled.li`
+
+`
 
 export const SocialLinksLink = styled.a`
 color: #f2f2f2;

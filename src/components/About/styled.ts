@@ -3,6 +3,9 @@ import styled from 'styled-components';
 
 
 export const AboutWrapper = styled.section`
+@media (max-width: 1368px) {
+  padding-top: 80px;
+}
 `
 
 export const Title = styled.h1`
@@ -21,6 +24,9 @@ font-weight: bold;
   display: block;
   background: #03bd4e;
 }
+@media (max-width: 768px){
+  font-size: 1.5rem;
+}
 `
 
 export const AboutContent = styled.p`
@@ -29,4 +35,7 @@ line-height: 22px;
 margin-top: 20px;
 color: #0d0d0d;
 font-family: 'Hind', sans-serif;
+@media (max-width: 768px){
+  font-size: 1rem;
+}
 `

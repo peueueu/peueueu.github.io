@@ -14,12 +14,16 @@ color: #03bd4e;
 font-weight: bold;
 letter-spacing: .7px;
 font-family: 'Hind', sans-serif;
+@media (max-width: 768px){
+  font-size: 1.25rem;
+}
 `
 export const Institution = styled.h3`
 font-size: 1rem;
 display: inline-block;
 color: #0d0d0d;
 font-weight: bold;
+margin-bottom: 20px;
 letter-spacing: .7px;
 font-family: 'Hind', sans-serif;
 `
@@ -30,9 +34,4 @@ font-size: 1rem;
 color: #606060;
 letter-spacing: 2px;
 font-family: 'Hind', sans-serif;
-`
-
-export const ExtraInfo = styled.div`
-display: flex;
-justify-content: space-between;
 `

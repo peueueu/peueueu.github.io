@@ -10,7 +10,7 @@ const Experience: React.FC = () => {
       <EducationListWrapper>
         <EducationList>
           <EducationItem>
-            <EducationCard course="Bacharelado em Engenharia da Computação" institution="UNINASSAU" period="jan/15 • atualmente" />
+            <EducationCard course="Bacharelado em Engenharia da Computação" institution="UNINASSAU" period="2021.1(previsto)" />
           </EducationItem>
         </EducationList>
       </EducationListWrapper>

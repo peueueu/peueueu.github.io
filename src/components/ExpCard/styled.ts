@@ -16,6 +16,13 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 margin-bottom: 10px;
+@media (max-width: 910px){
+  &:first-of-type {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  }
+}
 }
 `
 
@@ -36,6 +43,11 @@ color: #f2f2f2;
 font-weight: bold;
 letter-spacing: .7px;
 font-family: 'Hind', sans-serif;
+@media (max-width: 910px){
+  background: transparent;
+  padding: 5px 0;
+  color: #012619;
+}
 `
 
 export const ExtraInfo = styled.span`
@@ -54,16 +66,28 @@ animation: ${fadeIn} 1s;
 font-family: 'Hind', sans-serif;
 `
 
-export const DescriptionToggler = styled.a`
+export const DescriptionToggler = styled.button`
 font-size: 1rem;
 transition: color .5s ease;
 font-weight: bold;
 margin-bottom: 10px;
 font-family: 'Hind', sans-serif;
 text-decoration: none;
+cursor: pointer;
+display: flex;
+align-items: center;
+border: 2px solid #bebebe;
+border-radius: 7px;
+
+&:focus {
+  outline: none;
+}
 
 span {
   font-size: .75rem;
+  svg {
+    margin-top: 5px;
+  }
 }
 `
 

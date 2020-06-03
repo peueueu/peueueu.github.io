@@ -40,7 +40,7 @@ const SocialLinks: React.FC = () => {
           </SocialLinksLink>
         </SocialLinksItem>
         <SocialLinksItem>
-          
+
         </SocialLinksItem>
       </SocialLinksList>
     </SocialLinksWrapper>
