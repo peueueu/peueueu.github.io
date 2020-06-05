@@ -39,6 +39,9 @@ box-shadow: 0px 0px 5px rgba(0, 0, 0, .4);
 @media(max-width: 1444px){
   max-width: 100%;
 }
+@media(max-width: 411.98px){
+  max-width: 280px;
+}
 `
 
 export const EducationTitle = styled.h1`

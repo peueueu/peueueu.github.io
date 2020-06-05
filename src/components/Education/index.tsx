@@ -3,10 +3,10 @@ import EducationCard from '../EducationCard';
 import { EducationTitle, EducationWrapper, EducationListWrapper, EducationList, EducationItem } from './styled'
 
 
-const Experience: React.FC = () => {
+const Experience: React.FC<{ title: string }> = (props) => {
   return (
     <EducationWrapper>
-      <EducationTitle>Formação Acadêmica</EducationTitle>
+      <EducationTitle>{props.title}</EducationTitle>
       <EducationListWrapper>
         <EducationList>
           <EducationItem>

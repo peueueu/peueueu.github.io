@@ -7,7 +7,7 @@ const ExpCard: React.FC<{ company: string, location: string, role?: string, peri
 
   function toggleDescription() {
     showDescription({
-      show: !description.show
+      show: !description.show,
     })
   };
 
@@ -21,8 +21,8 @@ const ExpCard: React.FC<{ company: string, location: string, role?: string, peri
         </div>
 
         <div>
-          <ExtraInfo>{props.period}</ExtraInfo>
           <ExtraInfo>{props.location}</ExtraInfo>
+          <ExtraInfo>{props.period}</ExtraInfo>
         </div>
       </IntroWrapper>
       <DescriptionToggler onClick={toggleDescription} style={{ color: description.show ? '#F25252' : '#b2b2b2' }}>

@@ -28,6 +28,9 @@ export const SkillList = styled.ul`
 display: flex;
 flex-wrap: wrap;
 margin-top: 25px;
+@media(max-width: 330px){
+  justify-content: center;
+}
 `
 export const SkillListItem = styled.li`
 width: 180px;
@@ -53,13 +56,18 @@ border-left: 3px solid transparent;
   border-left: 3px solid ${oblivionTheme.textDetails};
 }
 
-@media (max-width: 768px){
-  width: 120px !important;
-  margin: 8px;
-}
 @media (max-width: 1170px){
   width: 140px;
   margin: 20px;
+}
+
+@media (max-width: 768px){
+  width: 120px;
+  margin: 10px;
+}
+
+@media(max-width: 330px){
+  width: 180px;
 }
 `
 

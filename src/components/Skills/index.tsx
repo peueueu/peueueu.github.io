@@ -20,7 +20,7 @@ const Skills: React.FC = () => {
         <SkillListTitle>Skills</SkillListTitle>
         <SkillList>
           {
-            Icons.map((i: any, icones: any) => {
+            Icons.map((i: number, icones: any) => {
               const Icones = Icons[icones];
               const labelIcon = Icones.target.displayName;
               return (

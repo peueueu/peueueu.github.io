@@ -22,6 +22,13 @@ margin-bottom: 10px;
   align-items: flex-start;
   justify-content: center;
   }
+  &:nth-child(2){
+    flex-direction: column;
+    align-items: flex-start;
+    span:first-of-type {
+      margin-bottom: 15px;
+    }
+  }
 }
 }
 `

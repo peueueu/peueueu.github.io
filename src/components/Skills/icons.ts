@@ -41,7 +41,7 @@ width: 64px;
 height: 64px;
 stroke-dashoffset: 1000;
 stroke-dasharray: 1000;
-animation ${svgAnimation} 3s ease-in-out forwards;
+animation ${svgAnimation} 4s ease-in-out forwards ;
 `
 
 const HtmlIcon = styled(Html5)`
@@ -165,7 +165,7 @@ stroke-dasharray: 1000;
 animation ${svgAnimation} 3s ease-in-out forwards;
 `
 
-type SkillList = any[] | any;
+type SkillList = any[];
 
 let Icons: SkillList = [
   ReactIcon,
