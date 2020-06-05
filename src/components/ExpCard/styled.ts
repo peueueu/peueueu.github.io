@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-
+import { oblivionTheme } from '../../styles/colors';
 
 const fadeIn = keyframes`
 from {
@@ -28,7 +28,7 @@ margin-bottom: 10px;
 
 export const Title = styled.h1`
 font-size: 1.5rem;
-color: #03bd4e;
+color: ${oblivionTheme.textDetails};
 font-weight: bold;
 letter-spacing: .7px;
 font-family: 'Hind', sans-serif;
@@ -37,7 +37,7 @@ export const Role = styled.h3`
 font-size: 1rem;
 padding: 11px;
 border-radius: 10px;
-background: #03bd4e;
+background: ${oblivionTheme.textDetails};
 display: inline-block;
 color: #f2f2f2;
 font-weight: bold;
@@ -46,7 +46,7 @@ font-family: 'Hind', sans-serif;
 @media (max-width: 910px){
   background: transparent;
   padding: 5px 0;
-  color: #012619;
+  color: ${oblivionTheme.textColor};
 }
 `
 
@@ -59,7 +59,7 @@ font-family: 'Hind', sans-serif;
 
 export const Description = styled.p`
 font-size: 1.25rem;
-color: #0d0d0d;
+color: ${oblivionTheme.textColor};
 margin-top: 15px;
 line-height: 22px;
 animation: ${fadeIn} 1s;

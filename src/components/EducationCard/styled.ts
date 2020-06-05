@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { oblivionTheme } from '../../styles/colors';
 
 export const CardWrapper = styled.div`
 display: flex;
@@ -10,7 +10,7 @@ justify-content: flex-start;
 export const Course = styled.h1`
 font-size: 1.5rem;
 margin-bottom: 20px;
-color: #03bd4e;
+color: ${oblivionTheme.textDetails};
 font-weight: bold;
 letter-spacing: .7px;
 font-family: 'Hind', sans-serif;
@@ -21,7 +21,7 @@ font-family: 'Hind', sans-serif;
 export const Institution = styled.h3`
 font-size: 1rem;
 display: inline-block;
-color: #0d0d0d;
+color: ${oblivionTheme.textColor};
 font-weight: bold;
 margin-bottom: 20px;
 letter-spacing: .7px;

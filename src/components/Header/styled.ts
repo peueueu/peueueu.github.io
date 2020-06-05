@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import { oblivionTheme } from '../../styles/colors';
 
 export const WrapperHeader = styled.div`
 position: fixed;
-background: #012619;
+background: ${oblivionTheme.darker};
 top: 0px;
 left: 0px;
 z-index: 1200;
@@ -15,7 +16,7 @@ width: 100vw;
 padding: 1rem;
 display: none;
 
-@media(max-width: 1368px){
+@media(max-width: 1170px){
   display: block;
 }
 `
